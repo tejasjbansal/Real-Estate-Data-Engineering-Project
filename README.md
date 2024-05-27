@@ -98,8 +98,8 @@ This project involves building an end-to-end Python ETL pipeline to extract real
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone [<repository-url>](https://github.com/tejasjbansal/Real-Estate-Data-Engineering-Project.git)
+   cd Real-Estate-Data-Engineering-Project
    ```
 
 2. **Set Up Environment Variables**:
@@ -110,18 +110,17 @@ This project involves building an end-to-end Python ETL pipeline to extract real
      ZILLOW_API_KEY=<your-zillow-api-key>
      ```
 
-3. **Run the Extraction Script**:
+3. **Run the Extraction Script/Dag**:
    ```bash
-   python extract_data.py
+   python zillowanalytics.py
    ```
 
 4. **Monitor the Pipeline in Apache Airflow**:
    - Access the Airflow web interface to monitor and manage the DAGs.
 
-## Conclusion
+5. **Create Lambda Functions and Schedule the trigger**
+   
+6. **Connect to Amazon Redshift**
 
-This README provides a comprehensive guide to setting up and running the real estate data engineering pipeline. Follow the steps carefully to ensure successful extraction, transformation, loading, and visualization of the data.
+7. **Visualize Data with Amazon QuickSight**
 
-For any issues or questions, feel free to reach out to the project maintainer.
-
-Happy coding!

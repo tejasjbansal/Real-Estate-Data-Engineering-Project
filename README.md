@@ -91,7 +91,7 @@ This project involves building an end-to-end Python ETL pipeline to extract real
 - Ensure you have all required AWS services set up and API credentials from Zillow Rapid API.
 - Install necessary Python packages:
   ```bash
-  pip install -r requirements.txt
+  bash setup_zillow.sh
   ```
 
 ### Running the Pipeline

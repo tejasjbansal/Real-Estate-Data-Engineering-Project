@@ -91,7 +91,7 @@ This project involves building an end-to-end Python ETL pipeline to extract real
 - Ensure you have all required AWS services set up and API credentials from Zillow Rapid API.
 - Install necessary Python packages:
   ```bash
-  pip install boto3 requests
+  pip install -r requirements.txt
   ```
 
 ### Running the Pipeline
@@ -102,25 +102,27 @@ This project involves building an end-to-end Python ETL pipeline to extract real
    cd Real-Estate-Data-Engineering-Project
    ```
 
-2. **Set Up Environment Variables**:
-   - Create a `.env` file with your AWS credentials and Zillow API key:
+2. **Configure the AWS Credentials**:
+    ```bash
+    aws congfigure
+    ```
+3. **Set Up Environment Variables**:
+   - Create a `config.json` file with your Zillow API key:
      ```bash
-     AWS_ACCESS_KEY_ID=<your-aws-access-key-id>
-     AWS_SECRET_ACCESS_KEY=<your-aws-secret-access-key>
      ZILLOW_API_KEY=<your-zillow-api-key>
      ```
 
-3. **Run the Extraction Script/Dag**:
+4. **Create Lambda Functions and Schedule the trigger**
+
+5. **Run the Script/Dag**:
    ```bash
    python zillowanalytics.py
    ```
 
-4. **Monitor the Pipeline in Apache Airflow**:
+6. **Monitor the Pipeline in Apache Airflow**:
    - Access the Airflow web interface to monitor and manage the DAGs.
-
-5. **Create Lambda Functions and Schedule the trigger**
    
-6. **Connect to Amazon Redshift**
+7. **Connect to Amazon Redshift**
 
-7. **Visualize Data with Amazon QuickSight**
+8. **Visualize Data with Amazon QuickSight**
 

@@ -109,7 +109,13 @@ This project involves building an end-to-end Python ETL pipeline to extract real
 3. **Set Up Environment Variables**:
    - Create a `config.json` file with your Zillow API key:
      ```bash
-     ZILLOW_API_KEY=<your-zillow-api-key>
+     {
+      "headers": {
+        "X-RapidAPI-Key": "YOUR_API_KEY",
+        "X-RapidAPI-Host": "zillow56.p.rapidapi.com"
+        }
+      }
+
      ```
 
 4. **Create Lambda Functions and Schedule the trigger**
